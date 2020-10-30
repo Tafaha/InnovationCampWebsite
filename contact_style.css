@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url("bilder/bakgrunn.jpg") no-repeat center;
+  background-size: cover;
+  height: auto;
+  font-family: 'Roboto';
+}
+.topnav{
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topnav a{
+  font-size: 20px;
+  text-align: center;
+  color: blue;
+  float:right;
+  padding: 35px 50px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #C8E8F3;
+  color: black;
+}
+.logo{
+float: left;
+padding-left: 100px;
+}
+.footer{
+    left: 400px;
+    text-align: center;
+    background-color: white;
+    color: blue;
+    padding: 20px;
+}
+
+.container{
+  max-width: 800px;
+  height: 600px;
+  background: #fff;
+  margin: 39px auto;
+  box-shadow: 0 0 30px rgba(71,99,84, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+#headline{
+  text-align: center;
+  letter-spacing: 1px;  
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #486255;
+}
+
+.input,
+.message .area{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+.login .input{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+.login .input:last-child{
+  margin-right: 0;
+}
+
+.message .area{
+  height: 200px;
+}
+
+.button{
+  width: 250px;
+  background: #486255;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input:focus,
+.message .area:focus{
+  border: 2px solid #486255;
+}
+
+::-webkit-input-placeholder{
+  font-family: 'roboto';
+}
+
