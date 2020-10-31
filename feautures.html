@@ -14,15 +14,42 @@
       <a href="feautures.html">Features</a>
       <a href="index.html">Home</a>
     </div>
-    <img class="pages" src ="bilder/page1.png" id="page1">
-    <img class="pages" src ="bilder/page2.png" id="page2">
-    <img class="pages" src ="bilder/page3.png" id="page3">
-    <img class="pages" src ="bilder/page4.png" id="page4" width="254px">
+    <img class="pages" src ="bilder/page1.png" id="page1" >
+    <img class="pages" src ="bilder/page2.png" id="page2" >
+    <img class="pages" src ="bilder/page3.png" id="page3" >
+    <img class="pages" src ="bilder/page4.png" id="page4" width="254px" >
     <img class="pages" src ="bilder/page5.png" id="page5">
-    <img class="pages" src ="bilder/page6.png" id="page6">
+    <img class="pages" src ="bilder/page6.png" id="page6" >
+
 </div>
+      <div class="next" onclick="nextPage(1)"></div>
+      <div class="previous" onclick="nextPage(-1)"></div>
       <div class="footer">
         <p>© Copyright 2020 Stay - Preventing Dropout · Designed By Marko Spyros & Mostafa Hadad · All Rights Reserved</p>
         </div>
   </body>
+  <script type="text/javascript">
+
+  var pageIndex = 1;
+  showPages(pageIndex);
+
+  function nextPage(n) {
+    showPages(pageIndex += n);
+  }
+
+  function showPages(n) {
+    var i;
+    var myPages = document.getElementsByClassName("pages");
+    if (n > myPages.length){
+        pageIndex = 6
+    }
+    if (n < 1){
+        pageIndex = 1;
+    }
+    for (i = 0; i < myPages.length; i++) {
+      myPages[i].style.display = "none";
+    }
+    myPages[pageIndex-1].style.display = "block";
+  }
+  </script>
 </html>
