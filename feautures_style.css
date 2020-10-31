@@ -32,3 +32,7 @@ padding-left: 100px;
   background-color: white;
   color: blue;
 }
+
+#pages{
+  display: none;
+}
