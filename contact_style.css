@@ -51,7 +51,7 @@ padding-left: 100px;
 
 #headline{
   text-align: center;
-  letter-spacing: 1px;  
+  letter-spacing: 1px;
   font-size: 45px;
   margin-bottom: 20px;
   color: #486255;
@@ -105,4 +105,3 @@ padding-left: 100px;
 ::-webkit-input-placeholder{
   font-family: 'roboto';
 }
-
