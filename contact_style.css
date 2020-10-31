@@ -7,7 +7,7 @@ body{
   background: url("bilder/bakgrunn.jpg") no-repeat center;
   background-size: cover;
   height: auto;
-  font-family: 'Roboto';
+  font-family: Chalkboard;
 }
 .topnav{
   background-color: white;
