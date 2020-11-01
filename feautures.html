@@ -14,8 +14,19 @@
       <a href="feautures.html">Features</a>
       <a href="index.html">Home</a>
     </div>
+    <div class="menu_icon" onclick="open_menu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="menu">
+      <h1 id="close" onclick="close_menu()">X</h1>
+      <a href="index.html">Home</a><br><br><br><br><br>
+      <a href="feautures.html">Features</a><br><br><br><br><br>
+      <a href="contact.html">Contact us</a><br>
+    </div>
     <div id="page">
-    <img src="bilder/bakgrunn.jpg" width="100%">
+    <img src="bilder/bakgrunn.jpg" id="bakgrunn" width="100%">
   <div class="pages"><img src ="bilder/page1.png" id="page1"><br><p>When the teacher opens the app,<br>an overview of the classes will appear.<br>
   Let´s go ahead and choose<br>for example class "1B".</p></div>
   <div class="pages"><img src ="bilder/page2.png" id="page2"><br> <p>Here the teacher will have a full overview<br>of the students that are in the class.
@@ -62,6 +73,16 @@
       myPages[i].style.display = "none";
     }
     myPages[pageIndex-1].style.display = "block";
+  }
+
+  function open_menu() {
+      document.getElementById("menu").style.display = "block";
+      document.getElementById("close").style.display = "block";
+  }
+
+  function close_menu() {
+    document.getElementById("close").style.display = "none";
+    document.getElementById("menu").style.display = "none";
   }
   </script>
 </html>
