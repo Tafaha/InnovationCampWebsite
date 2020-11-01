@@ -14,6 +14,17 @@
       <a href="feautures.html">Features</a>
       <a href="index.html">Home</a>
     </div>
+    <div class="menu_icon" onclick="open_menu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="menu">
+      <h1 id="close" onclick="close_menu()">X</h1>
+      <a href="index.html">Home</a><br><br><br><br><br>
+      <a href="feautures.html">Features</a><br><br><br><br><br>
+      <a href="contact.html">Contact us</a><br>
+    </div>
     <div class="container">
     <p id="headline">CONTACT US</p>
 
@@ -35,4 +46,17 @@
         <p>© Copyright 2020 Stay - Preventing Dropout · Designed By Marko Spyros & Mostafa Hadad · All Rights Reserved</p>
         </div>
   </body>
+  <script type="text/javascript">
+  function open_menu() {
+      document.getElementById("menu").style.display = "block";
+      document.getElementById("close").style.display = "block";
+  }
+
+  function close_menu() {
+    document.getElementById("close").style.display = "none";
+    document.getElementById("menu").style.display = "none";
+  }
+
+
+  </script>
 </html>
