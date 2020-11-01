@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Features</title>
+    <link rel="stylesheet" href="features_style.css">
+  </head>
+  <body>
+    <div class="topnav">
+        <div class="logo">
+        <img src ="bilder/stay.png" height="96px" width="184px">
+            </div>
+      <a href="contact.html">Contact us</a>
+      <a href="feautures.html">Features</a>
+      <a href="index.html">Home</a>
+    </div>
+    <div class="menu_icon" onclick="open_menu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="menu">
+      <h1 id="close" onclick="close_menu()">X</h1>
+      <a href="index.html">Home</a><br><br><br><br><br>
+      <a href="feautures.html">Features</a><br><br><br><br><br>
+      <a href="contact.html">Contact us</a><br>
+    </div>
+    <div id="page">
+    <img src="bilder/bakgrunn.jpg" id="bakgrunn" width="100%">
+  <div class="pages"><img src ="bilder/page1.png" id="page1"><br><p>When the teacher opens the app,<br>an overview of the classes will appear.<br>
+  Let´s go ahead and choose<br>for example class "1B".</p></div>
+  <div class="pages"><img src ="bilder/page2.png" id="page2"><br> <p>Here the teacher will have a full overview<br>of the students that are in the class.
+  <br>The teacher can choose one student.<br>Let´s choose for example "Cullen Michael".</p></div>
+  <div class="pages"><img src ="bilder/page3.png" id="page3"><br><p>The teacher will be able to see<br>the students attendance calendar.<br>
+    In this case the student has<br>been away for more than a month and <br>the posibility of dropout is high.<br>Let´s pretend that the date today
+    <br>is 31st of October and the student<br>isn´t attendant. Let´s press todays date.</p></div>
+  <div class="pages"><img src ="bilder/page4.png" id="page4" width="254px"><br><p>The teacher will have to fill out an attendance form.<br>
+    In this case we will have to choose "No"<br>because the student isn´t attendant<br>and comment the reason. Comment text fields with<br>no
+  comments will increase<br>the dropout posibilities of the student.</p></div>
+  <div class="pages"><img src ="bilder/page5.png" id="page5"><p>All the information that has<br>been given by the teacher with the app,
+  <br>will be transferred to our STAY database,<br>and will be shared with Redd Barna, and <br>the Uganda Bureau of Statistics. This data will<br>
+  be used to make a virtual presentantion about<br> the physical world based on attendance.</p></p></div>
+  <div class="pages"><img src ="bilder/page6.png" id="page6"><p>After filling out the student attendance form,<br>and choosing no as to if the<br>
+  student was attendant or not.<br>In this case we chose "No" and<br>the box with todays date turned red.</p></div>
+  </div>
+
+</div>
+      <div class="next" onclick="nextPage(1)"></div>
+      <div class="previous" onclick="nextPage(-1)"></div>
+      <div class="footer">
+        <p>© Copyright 2020 Stay - Preventing Dropout · Designed By Marko Spyros & Mostafa Hadad · All Rights Reserved</p>
+        </div>
+  </body>
+  <script type="text/javascript">
+
+  var pageIndex = 1;
+  showPages(pageIndex);
+
+  function nextPage(n) {
+    showPages(pageIndex += n);
+  }
+
+  function showPages(n) {
+    var i;
+    var myPages = document.getElementsByClassName("pages");
+    if (n > myPages.length){
+        pageIndex = 6
+    }
+    if (n < 1){
+        pageIndex = 1;
+    }
+    for (i = 0; i < myPages.length; i++) {
+      myPages[i].style.display = "none";
+    }
+    myPages[pageIndex-1].style.display = "block";
+  }
+
+  function open_menu() {
+      document.getElementById("menu").style.display = "block";
+      document.getElementById("close").style.display = "block";
+  }
+
+  function close_menu() {
+    document.getElementById("close").style.display = "none";
+    document.getElementById("menu").style.display = "none";
+  }
+  </script>
+</html>
