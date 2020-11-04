@@ -1,0 +1,72 @@
+
+body{
+font-family: Chalkboard;
+margin:0;
+}
+
+.topnav{
+background-color: white;
+overflow: hidden;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topnav a{
+font-size: 20px;
+text-align: center;
+color: blue;
+float:right;
+padding: 35px 50px;
+text-decoration: none;
+}
+.topnav a:hover {
+background-color: #C8E8F3;
+color: black;
+}
+.logo{
+float: left;
+padding-left: 100px;
+
+}
+.footer{
+    left: 400px;
+    text-align: center;
+    background-color: white;
+    color: blue;
+}
+
+.pages{
+  top: 120px;
+  left:350px;
+  position: absolute;
+}
+
+.next{
+  border-bottom: 30px solid transparent;
+  border-top: 30px solid transparent;
+  border-left: 50px solid #0000cd;
+  top: 310px;
+  left: 630px;
+  position: absolute;
+
+}
+
+
+.next:hover{
+  border-left: 50px solid #00008b;
+}
+
+.previous:hover{
+  border-left: 50px solid #00008b;
+}
+
+#page p{
+  border: 2.5px solid ;
+  top: 0px;
+  left: 400px;
+  position: absolute;
+  width: 250px;
+  font-size: 20px;
+  background-color: white;
+  text-align: center;
+  color: rgb(82, 134, 238);
+}
